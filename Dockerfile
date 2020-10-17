@@ -9,3 +9,6 @@ RUN yarn install && yarn cache clean
 COPY . /app 
  
 RUN yarn build
+
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html
