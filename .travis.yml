@@ -3,6 +3,6 @@ services:
  - docker
 
 before_install: 
- - docker build -t anisdhiyaeddine/dockerizedreactapp -f Dockerfile.dev
+ - docker build -t anisdhiyaeddine/dockerizedreactapp -f Dockerfile.dev .
 scripts: 
  - docker run anisdhiyaeddine/dockerizedreactapp npm run test -- --coverage
