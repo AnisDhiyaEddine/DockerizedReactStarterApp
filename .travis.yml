@@ -9,10 +9,10 @@ scripts:
 deploy: 
   provider: elasticbeanstalk
   region: "eu-west-3"
-  app: "docker"
-  env: "Docker-env" 
+  app: "ola"
+  env: "Ola-env" 
   bucket_name: "elasticbeanstalk-eu-west-3-769641087123"
-  bucket_path: "docker"
+  bucket_path: "ola"
   on: 
    branch: main
   access_key_id: $AWS_ACCESS_KEY
